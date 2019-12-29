@@ -1,5 +1,5 @@
 package com.landslide.justbacon.util;
-
+//contains information about the mod
 public class Reference {
 	public static final String MOD_ID = "justbaconmod";
 	public static final String NAME = "Just Bacon";

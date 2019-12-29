@@ -12,12 +12,15 @@ import com.landslide.justbacon.init.ModRecipes;
 import com.landslide.justbacon.proxy.CommonProxy;
 import com.landslide.justbacon.util.Reference;
 
+
+//This is the class that kicks off the whole thing
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION)
 public class Main {
-
+	
+	//I don't know what the majority of these things do
 	@Instance
 	public static Main instance;
-
+	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
 	public static CommonProxy proxy;
 
@@ -25,7 +28,8 @@ public class Main {
 	public static void PreInit(FMLPreInitializationEvent event) {
 
 	}
-
+	
+	//but I know this one initializes the recipes defined in ModRecipes
 	@EventHandler
 	public static void init(FMLInitializationEvent event) {
 		ModRecipes.init();
